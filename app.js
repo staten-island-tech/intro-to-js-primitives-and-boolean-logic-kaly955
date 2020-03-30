@@ -11,7 +11,10 @@
 //  let year= 2020;
 //  let nextYear = year +1;
 //  console.log(nextYear);
-
+// or is ||
+// and is &&
+// !== not equal to 
+// === equal
 
 let school = "elementary";{
     if(school =="elementary"){
