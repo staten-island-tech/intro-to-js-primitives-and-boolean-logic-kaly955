@@ -26,7 +26,7 @@ let school = "elementary";{
     }
 }
 
-let light = "green";
+let light = "red";
 if (light === "green") {
     console.log("Go");
 } else if (light === "yellow") {
@@ -34,19 +34,39 @@ if (light === "green") {
 } else {
     console.log("Stop");
 }
+switch(true){
+    case light=== "green":
+        console.log("drive");
+        break;
+        case light === "yellow":
+            console.log("slower");
+            case light==="red":
+                console.log("halt");
+                break;
+}
 
 let kristyIntolerant = true;
 let baoBaoIntolerant = true;
 
-if (kristyIntolerant === true && baoBaoIntolerant === true) {
-    console.log("Get almond milk");
-} else if (kristyIntolerant === true || baoBaoIntolerant === true) {
+if (kristyIntolerant === true || baoBaoIntolerant === true) {
     console.log("Get both milk");
+} else if (kristyIntolerant === true && baoBaoIntolerant === true) {
+    console.log("Get almond milk");
 } else {
     console.log("Get milk");
 }
+switch(true){
+    case kristyIntolerant === true || baoBaoIntolerant === true:
+        console.log("Both");
+        break;
+        case kristyIntolerant === true && baoBaoIntolerant === true:
+            console.log("almond");
+            default:
+                console.log("Reg");
+                break;
+}
 
-let temperature = 100;
+let temperature = 68;
 if (temperature < 68) {
     console.log ("Too cold");
 } else if (temperature >= 68 && temperature <= 72) {
@@ -57,7 +77,7 @@ if (temperature < 68) {
     console.log ("Too hot");
 }
 
-switch(''){
+switch(true){
     case temperature<68:
         console.log("Cold");
         break;
